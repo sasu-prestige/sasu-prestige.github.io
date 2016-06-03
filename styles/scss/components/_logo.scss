@@ -1,0 +1,36 @@
+// main : ../template.scss
+
+.logo {
+    position: relative;
+
+    margin: 0 0 7vh 0;
+    padding: 0;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+
+        font-size: 48px;
+        font-weight: 900;
+        font-family: "Montserrat", sans-serif;
+
+        line-height: 45px;
+        letter-spacing: -2px;
+
+        &:before {
+            position: absolute;
+            top: 0;
+
+            width: 13px;
+            height: 23px;
+
+            background-color: $white;
+
+            content: "";
+        }
+
+        a {
+            color: $black;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// main : ../template.scss
+
+.button {
+    vertical-align: baseline;
+    position: relative;
+    display: inline-block;
+
+    padding: 0 16px;
+    margin: 0;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: $black;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+
+    text-align: center;
+    text-decoration: none;
+
+    line-height: 22px;
+    white-space: nowrap;
+    color: $black;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.input {
+        -webkit-appearance: initial;
+        -moz-appearance: initial;
+        appearance: initial;
+
+        position: relative;
+        display: block;
+
+        margin: 2px 0;
+        padding: 8px 10px;
+
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 14px;
+
+        border-width: 3px;
+        border-radius: 0;
+        border-style: solid;
+        color: $white;
+
+        width: 100%;
+    }
+
+
+    .input {
+        min-height: 40px;
+
+        border-color: $black;
+        background-color: lighten($black, 5%);
+
+        &.small {
+            display: inline-block;
+
+            width: 49.5%;
+        }
+
+        &.large {
+            resize: vertical;
+
+            width: 100%;
+            height: 133px;
+
+            @include max-screen($mobile) {
+                height: 300px;
+            }
+        }
+    }

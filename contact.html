@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Prestige</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Suranna">
+        <link rel="stylesheet" href="styles/css/template.css">
+    </head>
+
+    <body class="home">
+        <div class="toggle" id="toggle">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <menu class="menu" id="menu">
+            <nav class="menu-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="work.html">Travaux</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="devis.html">Devis</a></li>
+            </nav>
+        </menu>
+
+        <div class="grid-row" id="main">
+            <div class="grid-column-7 mobile-hide main-background" id="map">
+            </div>
+
+            <div class="grid-column-5 main-container">
+                <hgroup class="logo">
+                    <h1><a href="index.html">Prestige</a></h1>
+                </hgroup>
+
+                <article>
+                    <p>Contactez-nous au telephone: <span>06 61 10 59 04</span></p>
+                </article>
+
+                <form method="POST" action="https://formspree.io/renovationsbtp@email.com">
+                    <input class="input small" name="nom" type="text" placeholder="Votre nom" required>
+                    <input class="input small" name="_replyto" type="email" placeholder="Votre e-mail" required>
+
+                    <input class="input" name="_subject" type="text" placeholder="Sujet..." required>
+                    <textarea class="input large" name="message" placeholder="Message..."></textarea>
+
+                    <input class="button" type="submit" value="Envoyez votre message">
+                </form>
+            </div>
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=show" async defer></script>
+        <script src="scripts/menu.js"></script>
+        <script>
+            function show() {
+                var div = document.getElementById( "map" );
+                var map = new google.maps.Map( div, {
+                    disableDefaultUI : true,
+                    zoom : 17,
+                    mapTypeId : google.maps.MapTypeId.SATELLITE,
+                    center : {
+                        lat: 48.8440404,
+                        lng: 2.196517
+                    }
+                } );
+            }
+        </script>
+    </body>
+</html>

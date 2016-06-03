@@ -1,0 +1,23 @@
+// compileCompressed: ../css/template.css
+
+@charset "UTF-8";
+
+@import "configuration/colors",
+        "configuration/responsive",
+        "configuration/variables";
+
+@import "configuration/mixins/clearfix",
+        "configuration/mixins/responsive";
+
+@import "components/resets/global",
+        "components/resets/normalize";
+
+@import "components/vendor/grid",
+        "components/vendor/lightbox";
+
+@import "components/body",
+        "components/form",
+        "components/gallery",
+        "components/logo",
+        "components/main",
+        "components/menu";

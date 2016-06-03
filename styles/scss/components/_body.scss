@@ -1,0 +1,21 @@
+// main : ../template.scss
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.home {
+    position: relative;
+
+    font-size: 17px;
+    font-family: "Suranna", serif;
+    line-height: 26px;
+
+    background-color: $white;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
