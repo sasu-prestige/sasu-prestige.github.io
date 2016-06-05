@@ -41,25 +41,4 @@
     p {
         margin: 20px 0;
     }
-
-    .top,
-    .bot {
-        position: fixed;
-        right: 0;
-
-        width: 41.66667%;;
-        height: 80px;
-
-        background-image: linear-gradient($white, rgba($white, .0001));
-
-        content: "";
-        z-index: 1;
-
-        @include max-screen($tablet) {
-            width: 100%;
-        }
-    }
-
-    .top { top: 0; }
-    .bot { bottom: 0; transform: rotate(180deg); }
 }
