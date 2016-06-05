@@ -50,7 +50,7 @@
         width: 41.66667%;;
         height: 80px;
 
-        background-image: linear-gradient($white, transparent);
+        background-image: linear-gradient($white, rgba($white, .0001));
 
         content: "";
         z-index: 1;
