@@ -1,0 +1,23 @@
+// main : ../template.scss
+
+.partenaires {
+    padding-top: 70px;
+    margin: 0 auto;
+
+    font-size: 12px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+    opacity: .25;
+
+    img {
+        display: inline-block;
+
+        margin: 10px 10px 0 0;
+        padding: 0;
+
+        width: 80px;
+        height: 20px;
+    }
+}
